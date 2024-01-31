@@ -11,7 +11,7 @@ spec:
      image: hhtpd
      ports:
        - containerPort: 80
-   -name: tomcat-container
+   - name: tomcat-container
     image: tomcat
     ports:
        - containerPort: 8080
