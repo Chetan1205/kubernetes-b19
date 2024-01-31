@@ -8,11 +8,11 @@ metadata:
 spec:
   containers:
    - name: my-container
-     image: hhtpd
-     ports:
+      image: httpd
+      ports:
        - containerPort: 80
    - name: tomcat-container
-     image: tomcat
-     ports:
+      image: tomcat
+      ports:
        - containerPort: 8080
 ...
