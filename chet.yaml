@@ -11,5 +11,4 @@ spec:
      image: hhtpd
      ports:
        - container: 80
-   -  name: httpd
 ...
