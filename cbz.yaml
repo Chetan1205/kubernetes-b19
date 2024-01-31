@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
     - name: cbz-container
-      image: httpd
+      image: nginx
       ports:
         - containerPort: 80
     
