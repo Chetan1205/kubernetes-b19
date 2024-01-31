@@ -10,5 +10,6 @@ spec:
    - name: my-container
      image: hhtpd
      ports:
-       - container: 80
+       - containerPort: 80
+    
 ...
