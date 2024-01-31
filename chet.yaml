@@ -7,12 +7,12 @@ metadata:
    app: my-app
 spec:
   containers:
-   - name: my-container
+    - name: cbz-container
       image: httpd
       ports:
-       - containerPort: 80
-   - name: tomcat-container
+        - containerPort: 80
+    - name: tomcat-container
       image: tomcat
       ports:
-       - containerPort: 8080
+        - containerPort: 8080
 ...
