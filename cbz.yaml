@@ -11,10 +11,7 @@ spec:
       image: httpd
       ports:
         - containerPort: 80
-    - name: tomcat-container
-      image: tomcat
-      ports:
-        - containerPort: 8080
+    
 ...
 
 ---
