@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: chetanmore12/frontend:latest
+          image: c
           ports:
             - containerPort: 80
   replicas: 3
