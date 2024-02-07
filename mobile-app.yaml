@@ -2,31 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: mobile-deployment
   labels:
-    app: my-app
+    app: mobile
 spec:
   template:
     metadata:
       labels:
-        app: my-app
+        app: mobile
     spec:
       containers:
-        - name: my-container
+        - name: mobile-c
           image: httpd
           ports:
             - containerPort: 80
-          resources:
-            requests:
-              cpu: 200m
-              memory: 100Mi
-            limits:
-              cpu: 400m
-              memory: 200Mi
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: mobile
   strategy:
     type: RollingUpdate
 ...
@@ -34,12 +27,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-svc
+  name: mobile-svc
 spec:
   ports:
     - port: 80
       targetPort: 80
       protocol: TCP
   selector:
-    app: my-app
+    app: mobile
 ...
